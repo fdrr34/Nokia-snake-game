@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nokia Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="menuContainer" id="menu">
+      <h1>Nokia Snake Game</h1>
+      <button id="startGame">Start Game</button>
+      <button id="showInstructions">Instructions</button>
+      <div>
+        <label for="speed">Speed:</label>
+        <select id="speed">
+          <option value="200">Very Slow</option>
+          <option value="150">Slow</option>
+          <option value="100">Normal</option>
+          <option value="75">Fast</option>
+          <option value="50">Very Fast</option>
+        </select>
+      </div>
+    </div>
+    <div class="container" id="gameContainer" style="display: none">
+      <canvas id="gameCanvas" width="300" height="300"></canvas>
+      <p>Use arrow keys to play.</p>
+    </div>
+    <div class="instructions" id="instructions" style="display: none">
+      <h2>Instructions</h2>
+      <p>Use arrow keys to navigate the snake.</p>
+      <p>Eat the red food to grow.</p>
+      <p>Avoid hitting the walls or the snake itself.</p>
+      <button id="backToMenu">Back to Menu</button>
+    </div>
+    <div class="paused" id="gamePaused" style="display: none">
+      <h2>Game Paused</h2>
+      <button id="pauseStartGame">Start Game</button>
+      <button id="pauseBackToMenu">Back to Menu</button>
+    </div>
+    <script src="logic.js"></script>
+  </body>
+</html>

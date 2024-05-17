@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Nokia Snake",
+  "version": "1.0",
+  "description": "this is simple nokia snake game for Chrome extension.",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icons/icon1.png"
+  },
+  "permissions": ["activeTab"]
+}

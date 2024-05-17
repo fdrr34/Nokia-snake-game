@@ -1,0 +1,56 @@
+/* styles.css */
+body {
+  min-width: 300px;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  color: #00ff00;
+  font-family: monospace;
+  margin: 0;
+}
+
+.paused,
+.snakeSpeed,
+.menu,
+.instructions,
+.high-score,
+.container {
+  text-align: center;
+}
+
+.paused,
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+canvas {
+  border: 2px solid #00ff00;
+  background-color: #000;
+}
+
+button {
+  background-color: #00ff00;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #00cc00;
+}
+
+label, select {
+  background-color: #000;
+  color: #00FF00;
+  font-size: 16px;
+  margin: 10px;
+}
+
+
